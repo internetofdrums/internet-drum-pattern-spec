@@ -48,9 +48,10 @@ That gives us 16 × 16 × (1 + 1) = 512 data parts for every drum pattern.
 ## Data size
 
 Since note length and velocity information are represented by whole numbers
-ranging from 0 to 127, their information fits in one 8-bit byte. Given 512 data
-parts per drum pattern and the constraint that every note's data, even if zero,
-should be defined, we need exactly **512 bytes** for every drum pattern.
+ranging from 0 to 127, their information fits in one octet (8-bit byte). Given
+512 data parts per drum pattern and the constraint that every note's data, even
+if zero, should be defined, we need exactly **512 octets** for every drum
+pattern.
 
 ## Wire format
 
