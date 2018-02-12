@@ -1,0 +1,24 @@
+{
+  "name": "internetofdrums-internet-drum-pattern-spec",
+  "version": "1.0.0",
+  "description": "Specifies the format of simple drum patterns that can be sent over the internet and interpreted by an intermediate.",
+  "scripts": {
+    "test": "node ./node_modules/markdownlint-cli/markdownlint.js *.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/internetofdrums/internet-drum-pattern-spec.git"
+  },
+  "author": "Piet van Dongen",
+  "contributors": [
+    "Piet van Dongen"
+  ],
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/internetofdrums/internet-drum-pattern-spec/issues"
+  },
+  "homepage": "https://github.com/internetofdrums/internet-drum-pattern-spec#readme",
+  "devDependencies": {
+    "markdownlint-cli": "^0.7.1"
+  }
+}

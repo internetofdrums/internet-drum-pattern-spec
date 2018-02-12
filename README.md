@@ -64,7 +64,7 @@ velocity of the 16th note of instrument 16 is processed.
 For the more visually inclined: the following figure shows the data order for
 each drum pattern.
 
-```
+```text
 +------------+-------------------+---+-------------------+
 | Instrument | Note 1            | … | Note 16           |
 +------------+-------------------+---+--------+----------+
