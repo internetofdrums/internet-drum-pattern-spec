@@ -84,9 +84,9 @@ incoming drum pattern data.
 
 ### Encoding
 
-To prevent modification of data during transport over the internet, it is 
-probably wise to encode the data before sending it, and have the receiver 
-decode it again. The [standard][2] [base-64 encoding][3] should suffice for 
+To prevent modification of data during transport over the internet, it is
+probably wise to encode the data before sending it, and have the receiver
+decode it again. The [standard][2] [base-64 encoding][3] should suffice for
 this purpose.
 
 [1]: https://en.wikipedia.org/wiki/MIDI
