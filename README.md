@@ -55,19 +55,12 @@ pattern.
 
 ## Wire format
 
-Drum patterns can be sent over the wire by sending all note data
-sequentially, encoded using [standard][2] [base-64 encoding][3].
-
-Receivers (interpreters) of drum patterns can use this definition to decode
-incoming drum pattern data.
-
-### Data order
-
-The pattern sequence starts at the note length of note 1 of instrument 1,
-followed by the note's velocity. Next, the note length of note 2 of instrument 1
-is up, followed by its velocity. After the velocity of the last note of
-instrument 1 comes the note length of note 1 of instrument 2. This continue
-until the velocity of the 16th note of instrument 16 is processed.
+Drum patterns can be sent over the wire by simply sending all note data
+sequentially, starting at the note length of note 1 of instrument 1, followed
+by the note's velocity. Next, the note length of note 2 of instrument 1 is up,
+followed by its velocity. After the velocity of the last note of instrument 1
+comes the note length of note 1 of instrument 2. This continues until the
+velocity of the 16th note of instrument 16 is processed.
 
 For the more visually inclined: the following figure shows the data order for
 each drum pattern.
@@ -86,12 +79,7 @@ each drum pattern.
 +------------+--------+----------+---+--------+----------+
 ```
 
-### Encoding
-
-The octet sequence should be encoded using standard base-64 encoding before
-sending it over the wire. This ensures that the drum pattern data is not
-modified during transport.
+Receivers (interpreters) of drum patterns can use this definition to determine
+incoming drum pattern data.
 
 [1]: https://en.wikipedia.org/wiki/MIDI
-[2]: https://tools.ietf.org/html/rfc4648
-[3]: https://en.wikipedia.org/wiki/Base64
